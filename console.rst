@@ -222,8 +222,8 @@ In PHP 8 and newer versions, you can register the command by adding the
     #[AsCommand(
         name: 'app:create-user',
         description: 'Creates a new user.',
-        hidden: false,
-        aliases: ['app:add-user']
+        aliases: ['app:add-user'],
+        hidden: false        
     )]
     class CreateUserCommand extends Command
     {
